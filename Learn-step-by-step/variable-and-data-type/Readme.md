@@ -1,5 +1,5 @@
-### Learn Variable and Data Type
-
+# Learn Variable and Data Type
+## Variable
 * For create variable with var and datatype, any 2 ways: 
 
     1. `var <nama-variabel> <data-type>`
@@ -22,7 +22,8 @@
 
 * Variable underscore (`_`) is reserved variable, which can be used to store unused values/variable. eg:
     1. `_ = <value>`
-    1. `<var1>, va, _ = <val1>, <val2> `
+    1. `var <var1>, _ = <val1>, <val2> `
+    1. `<var1>, _ := <val1>, <val2> `
     <br/>
 
 * Declare variabel with `new` keyword.
@@ -43,7 +44,20 @@
   <br/>
 
 
-#### A. String
+## Data Type
+
+### A. Integer data type
+- There are several types of non-decimal or non floating point numeric data types in Go. In general, there are 2 types of data in this category that need to be known.
+  
+  1. `uint`, for positif number.
+  1. `int`, for positif or negatif number.
+
+- if use `fmt.Printf()` function for formating data type, its only run when use template `%d` for integer formats
+
+- 
+
+
+### A. String
 * Using `fmt.Printf()` for print variable/argument with string type and using with `%s` symbol or just print string argument. eg :
   ~~~ 
     var firstName = "aan"
