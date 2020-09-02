@@ -34,6 +34,7 @@
       fmt.Println(name)   // 0x20818a220 --> Because name save the pointer string 
       fmt.Println(*name)  // ""          --> dereference, to get value of pointer
     ~~~
+    
   <br/>
 
 * Declare with `make` keyword can only be used to create several types of variable, namely:
@@ -46,15 +47,17 @@
 
 ## Data Type
 
-### A. Integer data type
+### A. Integer
 - There are several types of non-decimal or non floating point numeric data types in Go. In general, there are 2 types of data in this category that need to be known.
-  
   1. `uint`, for positif number.
   1. `int`, for positif or negatif number.
-
+  
 - if use `fmt.Printf()` function for formating data type, its only run when use template `%d` for integer formats
 
-- 
+### B. Float
+- any 2 data type for decimal numeric, float32 and float64. the difference between the two data types is in the width of decimal value that can be accomodated. refer to the [IEEE-754 32-bit floating-point numbers specification](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+
+- if use `fmt.Printf()` function for formating data type, its only run when use template `%f` for print all decimal number or use template `%.<num>f` for print decimal value with max width `<num>`
 
 
 ### A. String
