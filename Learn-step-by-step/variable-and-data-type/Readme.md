@@ -47,32 +47,32 @@
 
 ## Data Type
 
-### A. Integer
+### A. [Integer](https://github.com/aandaldi/Learn-Golang/blob/aan/Learn-step-by-step/variable-and-data-type/integers.go)
 - There are several types of non-decimal or non floating point numeric data types in Go. In general, there are 2 types of data in this category that need to be known.
   1. `uint`, for positif number.
   1. `int`, for positif or negatif number.
   
 - if use `fmt.Printf()` function for formating data type, its only run when use template `%d` for integer formats
 
-### B. Float
+### B. [Float](https://github.com/aandaldi/Learn-Golang/blob/aan/Learn-step-by-step/variable-and-data-type/float.go)
 - any 2 data type for decimal numeric, float32 and float64. the difference between the two data types is in the width of decimal value that can be accomodated. refer to the [IEEE-754 32-bit floating-point numbers specification](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 
 - if use `fmt.Printf()` function for formating data type, its only run when use template `%f` for print all decimal number or use template `%.<num>f` for print decimal value with max width `<num>`
 
-### C. Boolean
+### C. [Boolean](https://github.com/aandaldi/Learn-Golang/blob/aan/Learn-step-by-step/variable-and-data-type/boolean.go)
 - Boolean only have to values are true and false
 
 - if use `fmt.Printf()` function for formating data type, its only run when use template `%t` for print boolean as string
 
-### A. String
-* Using `fmt.Printf()` for print variable/argument with string type and using with `%s` symbol or just print string argument. eg :
-  ~~~ 
-    var firstName = "aan"
-    var *lastName string
-    lastName = "aldi"
-    
-    fmt.Printf("Welcome \n")
-    fmt.Printf("Halo %s %s \n", firstName, lastName) // Halo aan aldi 
+### D. [String](https://github.com/aandaldi/Learn-Golang/blob/aan/Learn-step-by-step/variable-and-data-type/string.go)
+- String value enclosed in quotation marks or double quotes ("). e.g `<var> = "<value>"`
+- another way to declare string, can use double grave accent/backticks(``). this will be print all in the inside of this symbol, event (`\n`). eq:
+    ~~~
+      <var> = `"<stringval1>" 
+               <stingval2>`        
+    // this will print:
+    //"<stringval1>"
+    //<stringval2>                                    
+    ~~~
 
-
-  ~~~
+- if use `fmt.Printf()` function for formating data type, its only run when use template `%s` for print string value or use template `%v` for print value from all data-type, and use template `%T` for print the value data type.
