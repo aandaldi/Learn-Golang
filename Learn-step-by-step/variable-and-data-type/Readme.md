@@ -59,6 +59,10 @@
 
 - if use `fmt.Printf()` function for formating data type, its only run when use template `%f` for print all decimal number or use template `%.<num>f` for print decimal value with max width `<num>`
 
+### C. Boolean
+- Boolean only have to values are true and false
+
+- if use `fmt.Printf()` function for formating data type, its only run when use template `%t` for print boolean as string
 
 ### A. String
 * Using `fmt.Printf()` for print variable/argument with string type and using with `%s` symbol or just print string argument. eg :
