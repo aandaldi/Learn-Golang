@@ -66,6 +66,7 @@
 
 ### D. [String](https://github.com/aandaldi/Learn-Golang/blob/aan/Learn-step-by-step/variable-and-data-type/string.go)
 - String value enclosed in quotation marks or double quotes ("). e.g `<var> = "<value>"`
+- string in  go are immutable. you cannot  update the element of the string.
 - another way to declare string, can use double grave accent/backticks(``). this will be print all in the inside of this symbol, event (`\n`). eq:
     ~~~
       <var> = `"<stringval1>" 
