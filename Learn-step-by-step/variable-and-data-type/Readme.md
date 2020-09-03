@@ -76,3 +76,14 @@
     ~~~
 
 - if use `fmt.Printf()` function for formating data type, its only run when use template `%s` for print string value or use template `%v` for print value from all data-type, and use template `%T` for print the value data type.
+<br/>
+
+### E. Constant 
+  - declare with `const` command. e.g:
+    
+        const <var> <data-type> = <value>
+        const <var> = <value>
+      and etc.
+  - constant value cannot to change or update.
+<br/>
+
