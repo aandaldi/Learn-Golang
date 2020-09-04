@@ -1,6 +1,11 @@
 # Array, Slice, and Map
 
-## Array
+- len() function used to count elements from an array or slice
+- cap() function used to count width or limit element from an array or slice
+- append()function is used to add an array or slice element
+
+
+## [Array](https://github.com/aandaldi/Learn-Golang/tree/aan/Learn-step-by-step/array-slice-map/array.go)
 - an array is a collection of elements with the same data type.
  array have limit, we can set when declare the array
 - default value from an array depending on the data-type of varible
@@ -48,3 +53,16 @@
     <arrayname>[<n>] = <valn>
     <arrayname>[<n>] = <valn>
     ~~~
+    [Example](https://github.com/aandaldi/Learn-Golang/tree/aan/Learn-step-by-step/array-slice-map/array.go)
+<br/>
+
+
+## [Slice](https://github.com/aandaldi/Learn-Golang/tree/aan/Learn-step-by-step/array-slice-map/slice.go)
+- slice is reference of element.
+- slice's format is like array
+- if any update in index slice will be update another value using the index slice value
+- declares the slice like an array, but we dont include any constraints on the array element. declare like this:
+
+    `var <slicename> = []<datatype>{<val1>, <val2>}`
+
+- copy() function is used to copy a slice element. used like `copy(<new-slice>, <reference-slice>)`
