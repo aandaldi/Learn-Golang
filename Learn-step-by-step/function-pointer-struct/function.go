@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // declare simple function1
 func printName() {
@@ -41,6 +44,21 @@ func calculateAddition(numbers ...int) int {
 	return add
 }
 
+// declare simple closure with function is return value
+func findMax(numbers []int) func() int {
+
+	var result = func() int {
+		max := numbers[0]
+		for _, num := range numbers {
+			if max < num {
+				max = num
+			}
+		}
+		return max
+	}
+	return result
+}
+
 func main() {
 	// call simple funtion1
 	printName()
@@ -60,4 +78,47 @@ func main() {
 	resCalculate := calculateAddition(2, 4, 8, 3, 6)
 	fmt.Println("Result add calculate is ", resCalculate)
 
+	text := `
+		hello
+		my name
+		is jhon
+	`
+
+	fmt.Println(text)
+	word := strings.Fields(text)
+	fmt.Println(word)
+
+	// declare simple closure function1, save as variable
+	var getMinMax = func(numbers []int) (int, int) {
+		min, max := numbers[0], numbers[0]
+		for _, num := range numbers {
+			if min > num {
+				min = num
+			}
+			if max < num {
+				max = num
+			}
+		}
+		return min, max
+	}
+
+	numbers := []int{2, 3, 42, 3, 5, 5, 2, 5, 66, 34}
+	fmt.Println(getMinMax(numbers))
+
+	// declare simple closure with IIFE expression
+	var getMin = func(numbers []int) int {
+		min := numbers[0]
+		for _, num := range numbers {
+			if min > num {
+				min = num
+			}
+		}
+		return min
+	}(numbers)
+
+	fmt.Println(getMin)
+
+	// call funtion simple closure with function as return value
+	res := findMax(numbers) //res is function
+	fmt.Println(res())
 }
